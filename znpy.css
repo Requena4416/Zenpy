@@ -1,0 +1,125 @@
+body {
+    background-color: rgba(178, 221, 197, 0.502);
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Fixing nesting for indent */
+.indent p {
+    text-indent: 50px;
+    line-height: 1.5;
+}
+
+.navbar {
+    font-family: Papyrus, fantasy;
+    display: flex;
+    background-color: rgb(197, 177, 223);
+    padding: 3px;
+}
+
+.navbar h1 {
+    margin: 0;
+    padding-top: 30px;
+    padding-right: 2%;
+}
+
+.navbar a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: larger;
+    margin: 5px;
+    padding: 15px;
+    padding-top: 30px;
+    color: rgb(50, 50, 43);
+    transition: 0.5s;
+}
+
+.navbar a:hover {
+    background-color: rgba(166, 122, 192, 0.395);
+}
+
+.navbar .active {
+    background-color: rgb(156, 122, 192);
+}
+
+.navbar .img1 {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+
+.banner {
+    position: relative;
+    height: 83.5vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Fixing nesting for banner-img */
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding: 18%;
+}
+
+/* Styling the typewriter text */
+.typewriter {
+    position: absolute; /* Ensure it's positioned within the banner */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Actual centering */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid black; /* Cursor effect */
+    width: fit-content;
+    color: black; /* Text color */
+}
+
+/* Animation for the typewriter effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+.typewriter span {
+    display: inline-block;
+    animation: typing 4s steps(30, end), blink 0.75s step-end infinite;
+}
+
+.content2 {
+    text-align: center;
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.img2 {
+    .mind{
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+    .body{
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+    .soul{
+        width: 250px;
+        height: 250px;
+        padding: 10px;
+    }
+}
